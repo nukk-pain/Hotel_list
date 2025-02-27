@@ -1,0 +1,154 @@
+/* styles/Home.module.css */
+.container {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    /* 전체 폰트 변경 */
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    /* 전체 배경색 변경 */
+}
+
+.filterPanel {
+    width: 300px;
+    /* 필터 패널 폭 조정 */
+    padding: 20px;
+    background-color: #ffffff;
+    /* 필터 패널 배경색 변경 */
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.mapContainer {
+    flex-grow: 1;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.mapTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.filterTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.filterSection {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.filterSectionHeader {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px;
+    /* 헤더 패딩 추가 */
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.filterSectionHeader:hover {
+    background-color: #f8f8f8;
+    /* 헤더 호버 효과 추가 */
+}
+
+.filterSectionTitle {
+    margin-right: auto;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    color: #333;
+}
+
+.filterCollapseIcon {
+    font-size: 1rem;
+    transition: transform 0.2s ease-in-out;
+    /* 애니메이션 효과 추가 */
+    margin-left: 10px;
+    /* 화살표 간격 조정 */
+}
+
+.filterCollapseIcon.collapsed {
+    transform: rotate(180deg);
+}
+
+.filterLabel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.checkbox {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.allCheckbox {
+    font-weight: bold;
+    color: #333;
+    /* 전체 선택 레이블 색상 조정 */
+    margin-left: 5px;
+}
+
+.allChecked {
+    color: #0074d9;
+    /* 모두 선택 시 글자 색상 변경 */
+}
+
+.filterItem {
+    margin-left: 15px;
+    /* 필터 아이템 들여쓰기 추가 */
+    padding: 2px 0;
+    /* 필터 아이템 상하 패딩 추가 */
+}
+
+/* 지도 스타일 */
+
+/* 팝업 컨테이너 스타일 */
+.popupContainer {
+    max-width: 300px;
+}
+
+.popupContent {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* 팝업 호텔 이름 스타일 */
+.popupHotelName {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+    /* 호텔 이름 블록 요소로 변경 */
+}
+
+/* 팝업 호텔 브랜드 스타일 */
+.popupHotelBrand {
+    color: #333;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+    /* 호텔 이름 블록 요소로 변경 */
+}
+
+/* 팝업 호텔 링크 스타일 */
+.popupHotelLink {
+    color: #0074d9;
+    text-decoration: underline;
+    display: block;
+    /* 링크 블록 요소로 변경 */
+}
